@@ -2,7 +2,7 @@ FROM alpine:edge
 
 LABEL maintainer="Milan Sulc <sulcmil@gmail.com>"
 
-ENV ADMINER_DG_VERION=1.21.0
+ENV ADMINER_PM_VERION=1.8
 ENV MEMORY=256M
 ENV UPLOAD=2048M
 
@@ -20,7 +20,7 @@ RUN echo '@testing http://nl.alpinelinux.org/alpine/edge/testing' >> /etc/apk/re
         php7-json@testing \
         php7-pecl-mongodb@testing \
         dumb-init && \
-    wget https://github.com/dg/adminer-custom/archive/v$ADMINER_DG_VERION.tar.gz -O /srv/adminer.tgz && \
+    wget https://github.com/pematon/adminer-custom/archive/v$ADMINER_PM_VERION.tar.gz -O /srv/adminer.tgz && \
     tar zxvf /srv/adminer.tgz --strip-components=1 -C /srv && \
     rm /srv/adminer.tgz && \
     apk del wget ca-certificates && \
