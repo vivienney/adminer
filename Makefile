@@ -1,12 +1,12 @@
 .PHONY:
 
-DOCKER_IMAGE=dockette/adminer
+DOCKER_IMAGE=vivienney/adminer
 
 build-full:
 	docker build -t ${DOCKER_IMAGE}:full ./adminer-full
 
-build-dg:
-	docker build -t ${DOCKER_IMAGE}:dg ./adminer-dg
+build-pm:
+	docker build -t ${DOCKER_IMAGE}:pm ./adminer-pm
 
 build-editor:
 	docker build -t ${DOCKER_IMAGE}:editor ./adminer-editor
