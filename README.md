@@ -4,13 +4,7 @@
 
 You should take a look to the official github profile (https://github.com/vrana/adminer).
 
-![Adminer](https://rawgit.com/dockette/adminer/master/.docs/assets/adminer.png)
-
-------
-
-[![Docker Stars](https://img.shields.io/docker/stars/dockette/adminer.svg?style=flat)](https://hub.docker.com/r/dockette/adminer/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/dockette/adminer.svg?style=flat)](https://hub.docker.com/r/dockette/adminer/)
-[![Join the chat](https://img.shields.io/gitter/room/dockette/dockette.svg?style=flat-square)](https://gitter.im/dockette/dockette?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+![Adminer](https://rawgit.com/vivienney/adminer/master/.docs/assets/adminer.png)
 
 ## Prologue
 
@@ -27,7 +21,7 @@ There are few variants of this adminer image based on Alpine Linux:
 docker run \
     --rm
     -p 8000:80
-    dockette/adminer:full
+    vivienney/adminer:full
 ```
 
 By default container is running with `MEMORY=256M` (memory_limit) and `UPLOAD=2048M` (upload_max_filesize, post_max_size). You can override it.
@@ -38,28 +32,32 @@ docker run \
     -p 8000:80
     -e MEMORY=512M
     -e UPLOAD=4096M
-    dockette/adminer:full
+    vivienney/adminer:full
 ```
 
 ## Versions
 
 | Image                        | Technologies                          | Size | Docker Hub                                              |
 |------------------------------|---------------------------------------|------|---------------------------------------------------------|
-| dockette/adminer             | MySQL / PostgreSQL / MongoDB / Sqlite | 12mb | [link](https://hub.docker.com/r/dockette/adminer/tags/) |
-| dockette/adminer:full        | MySQL / PostgreSQL / MongoDB / Sqlite | 12mb | [link](https://hub.docker.com/r/dockette/adminer/tags/) |
-| dockette/adminer:mysql       | MySQL                                 | 9mb  | [link](https://hub.docker.com/r/dockette/adminer/tags/) |
-| dockette/adminer:pgsql       | PostgreSQL                            | 8mb  | [link](https://hub.docker.com/r/dockette/adminer/tags/) |
-| dockette/adminer:mongo       | MongoDB                               | 9mb  | [link](https://hub.docker.com/r/dockette/adminer/tags/) |
+| vivienney/adminer            | MySQL / PostgreSQL / MongoDB / Sqlite | 12mb | [link](https://hub.docker.com/r/vivienney/adminer/tags/)|
+| vivienney/adminer:full       | MySQL / PostgreSQL / MongoDB / Sqlite | 12mb | [link](https://hub.docker.com/r/vivienney/adminer/tags/)|
+| vivienney/adminer:mysql      | MySQL                                 | 9mb  | [link](https://hub.docker.com/r/vivienney/adminer/tags/)|
+| vivienney/adminer:pgsql      | PostgreSQL                            | 8mb  | [link](https://hub.docker.com/r/vivienney/adminer/tags/)|
+| vivienney/adminer:mongo      | MongoDB                               | 9mb  | [link](https://hub.docker.com/r/vivienney/adminer/tags/)|
 
 ## Custom
 
-### Adminer DG
+### Adminer Petamon
 
-> Customization for the best database management tool written in PHP, Adminer
+> Custom all-in-one configuration for Adminer with a responsive touch-friendly theme.
 
-You should take a look to the official github profile (https://github.com/dg/adminer-custom).
+You should take a look to the official github profile (https://github.com/pematon/adminer-custom).
 
-![Adminer DG](https://rawgit.com/dockette/adminer/master/.docs/assets/adminer-dg.png)
+<img src="http://pematon.github.io/screenshots/adminer.png?4" width="728px" />
+
+Three color variants included.
+
+<img src="http://pematon.github.io/screenshots/adminer-vriants.png" width="620px" />
 
 #### Usage
 
@@ -67,15 +65,14 @@ You should take a look to the official github profile (https://github.com/dg/adm
 docker run \
     --rm
     -p 8000:80
-    dockette/adminer:dg
+    vivienney/adminer:pm
 ```
 
 #### Tags
 
 | Image                        | Technologies                          | Size | Docker Hub                                              |
 |------------------------------|---------------------------------------|------|---------------------------------------------------------|
-| dockette/adminer:dg          | MySQL / PostgreSQL / MongoDB / Sqlite | 16mb | [link](https://hub.docker.com/r/dockette/adminer/tags/) |
-
+| vivienney/adminer:pm         | MySQL / PostgreSQL / MongoDB / Sqlite | 16mb | [link](https://hub.docker.com/r/vivienney/adminer/tags/)|
 
 ### Maintenance
 
