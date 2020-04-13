@@ -4,7 +4,7 @@
 
 You should take a look to the official github profile (https://github.com/vrana/adminer).
 
-![Adminer](https://rawgit.com/vivienney/adminer/master/.docs/assets/adminer.png)
+![Adminer](https://raw.githubusercontent.com/vivienney/adminer/master/.docs/assets/adminer.png)
 
 ## Prologue
 
